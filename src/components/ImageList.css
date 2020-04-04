@@ -1,0 +1,22 @@
+.image-list {
+  /* NON GRID METHOD USING CSS ONLY TO MAKE GRID. NEEDS MEDIA QUERIES TO ADJUST COLUMN NUMBERS FOR RESPONSIVE */
+  /* line-height: 0;
+  -webkit-column-count: 3;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    3;
+  -moz-column-gap:      0px;
+  column-count:         3;
+  column-gap:           0px;   */
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: 10px;
+}
+
+.image-list img {
+  /* WIDTH AND HEIGHT SETTINGS FOR NON GRID METHOD */
+  /* width: 100% !important; */
+  /* height: auto !important;  */
+
+  width: 100%;
+}
